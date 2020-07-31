@@ -41,8 +41,8 @@ export class CreateComponent implements OnInit {
 
 getFunction(){
 	if (document.getElementById('get')) { 
-		var e=document.getElementById("htmlcode");
-      var content=e.innerHTML;
+		let e=document.getElementById("htmlcode");
+      let content=e.innerHTML;
       alert(content);
        this.value=content
  		}
@@ -50,8 +50,8 @@ getFunction(){
     }
 copyCode(){
   if (document.getElementById('get')) { 
-		var e=document.getElementById("htmlcode");
-      var content=e.innerHTML;
+		let e=document.getElementById("htmlcode");
+      let content=e.innerHTML;
       
        this.value=content
  		}
@@ -59,8 +59,8 @@ copyCode(){
 }
 getFunction1(){
 	if (document.getElementById('get1')) { 
-		var e=document.getElementById("htmlcode1");
-      var content=e.innerHTML;
+		let e=document.getElementById("htmlcode1");
+      let content=e.innerHTML;
       alert(content);
        this.value=content
  		}
@@ -68,8 +68,8 @@ getFunction1(){
     }
 copyCode1(){
   if (document.getElementById('get1')) { 
-		var e=document.getElementById("htmlcode1");
-      var content=e.innerHTML;
+		let e=document.getElementById("htmlcode1");
+      let content=e.innerHTML;
       
        this.value=content
  		}
@@ -77,8 +77,8 @@ copyCode1(){
 }
 getFunction2(){
 	if (document.getElementById('get2')) { 
-		var e=document.getElementById("htmlcode2");
-      var content=e.innerHTML;
+		let e=document.getElementById("htmlcode2");
+      let content=e.innerHTML;
       alert(content);
        this.value=content
  		}
@@ -86,8 +86,8 @@ getFunction2(){
     }
 copyCode2(){
   if (document.getElementById('get2')) { 
-		var e=document.getElementById("htmlcode2");
-      var content=e.innerHTML;
+		let e=document.getElementById("htmlcode2");
+      let content=e.innerHTML;
       
        this.value=content
  		}
@@ -95,8 +95,8 @@ copyCode2(){
 }
 getFunction3(){
 	if (document.getElementById('get3')) { 
-		var e=document.getElementById("htmlcode3");
-      var content=e.innerHTML;
+		let e=document.getElementById("htmlcode3");
+      let content=e.innerHTML;
       alert(content);
        this.value=content
  		}
@@ -104,8 +104,8 @@ getFunction3(){
     }
 copyCode3(){
   if (document.getElementById('get3')) { 
-		var e=document.getElementById("htmlcode3");
-      var content=e.innerHTML;
+		let e=document.getElementById("htmlcode3");
+      let content=e.innerHTML;
       
        this.value=content
  		}
