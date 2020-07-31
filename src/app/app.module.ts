@@ -20,6 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { CreateComponent } from './components/create/create.component';
 import {ClipboardModule} from '@angular/cdk/clipboard';
 import { TemplatesComponent } from './components/templates/templates.component';
+import {CdkScrollableModule} from '@angular/cdk/scrolling';
+import {ScrollingModule } from '@angular/cdk/scrolling';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +48,9 @@ import { TemplatesComponent } from './components/templates/templates.component';
     MatTabsModule,
     MatFormFieldModule,
     HttpClientModule,
-    ClipboardModule
+    ClipboardModule,
+    CdkScrollableModule,
+    ScrollingModule
   
   ],
   providers: [ ],

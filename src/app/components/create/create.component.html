@@ -1,13 +1,23 @@
-<div class="container">
+<div style="background-color:#1976d2 ;">
+<div class="container" >
     <div class="row">
         <div class="col">
-            <div class="container" style="border: 1px blue solid; border-radius: 2%;">
+            <div class="container" style="background-color: white; margin-top: 50px; border-radius: 2%;">
                 <div class="row">
+                    
+                    
+               
                     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-nd-offset-2"  style="margin: 1%;">
+
+                        
+                        <mat-tab-group color="primary">
+                            <mat-tab label="General"  style="width: max-content;">
+                                
                         <form >
+                            
                             <div id="user-data" >
                                 <div class="form-group">
-                                    <label for="name"> Name</label>
+                                    <label for="name"> Name : </label>
                                     
                                     <input type="text"
                                     id="name"
@@ -109,17 +119,86 @@
                             </div>
                             <button class="btn btn-primary" type="submit">Submit</button>
                         </form>
+                    </mat-tab>
+                    <mat-tab label="image">
+                        <div id="user-data" >
+                            <div class="form-group" >
+                                <label for="imageurl">Image Link</label>
+                                <input type="text"
+                                id="imageurl"
+                                class="form-control"
+                                [(ngModel)]='address' 
+                                name="imageurl">
+                            </div>
+                        </div>
+                    </mat-tab>
+
+                    <mat-tab label="Social">
+                    
+                            <form > 
+                                <div id="user-data">
+                                    <div class="form-group" >
+                                        <label for="name"> <img src="https://img.icons8.com/fluent/50/000000/facebook-new.png"/></label>
+                                        <input type="text"
+                                        id="name"
+                                        class="form-control"
+                                        ngModel
+                                        name="name">
+                                    </div>
+                                    </div>
+                                    <div id="user-data">
+                                        <div class="form-group" >
+                                            <label for="company">  <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/>
+                                            </label>
+                                            <input type="text"
+                                            id="company"
+                                            class="form-control"
+                                            ngModel
+                                            name="company">
+                                    </div>
+                                    </div>
+                                    <div id="user-data">
+                                        <div class="form-group" >
+                                            <label for="position"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></label>
+                                            <input type="text"
+                                            id="position"
+                                            class="form-control"
+                                            ngModel
+                                            name="position">
+                                     </div>
+                                    </div>
+                                    
+                                    <div id="user-data">
+                                        <div class="form-group" >
+                                            <label for="position">  <img src="https://img.icons8.com/doodle/48/000000/linkedin--v2.png"/>
+                                            </label>
+                                            <input type="text"
+                                            id="position"
+                                            class="form-control"
+                                            ngModel
+                                            name="position">
+                                     </div>
+                                    </div>
+                                <button class="btn btn-primary" type="submit">Submit</button>
+                            </form>
+                            
+                    </mat-tab>
+                    <mat-tab label="Addons">Addons</mat-tab>
+                    <mat-tab label="Design">Design</mat-tab>
+
+                </mat-tab-group>
                         
                        
                     </div>
                     
                 </div>
                 <!-- <button class="btn btn-danger"(click)="onClearUsers()">ClearUsers</button> -->
-             
+
             </div> 
                 </div>
-                <div class="col">
+                <div class="col" style="margin-top: 50px;">
                     <!-- First Email Template -->
+                    
                     <mat-card class="example-card" >
                         
                       <mat-card-header>
@@ -127,10 +206,10 @@
                       
                     </mat-card-header>
                     
-                    <mat-card-content>
+                    <mat-card-content> 
                         To : <br><hr>
                         From : <hr>
-                        <div id="htmlcode">
+                        <div id="htmlcode"> 
                             <div style="max-width: 400px">
                             <table cellspacing="0" cellpadding="0" border="0" role="presentation" style="font-size: 0px; line-height: 1.5;">
                                <tbody>
@@ -188,7 +267,7 @@
                                                </td>
                                            </tr>
                                            <tr>
-                                               <td>
+                                               <td >
                                                    <span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(64, 158, 255); font-weight: 600;">Phone: </span>
                                                    <span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;">
                                                     <!-- 833-CMS -->
@@ -413,6 +492,298 @@
                          
                       </mat-card-actions>
                       </mat-card>
+
+                      <!-- Third Templates Email -->
+                      <mat-card class="example-card" >
+                        
+                        <mat-card-header>
+                          <mat-card-title style="font-size: 21px; font-family: Arial, Helvetica, sans-serif; color: rgb(64, 158, 255); font-weight: 600;">Email Template</mat-card-title>
+                        
+                      </mat-card-header>
+                      
+                      <mat-card-content> 
+                          To : <br><hr>
+                          From : <hr>
+                          <div id="htmlcode2">
+                              <div style="max-width: 400px">
+                              <table cellspacing="0" cellpadding="0" border="0" role="presentation" style="font-size: 0px; line-height: 1.5;">
+                                <td width="35%">
+                                    <img src="https://img.mysignature.io/p/6/5/9/65978094-291c-58bb-953f-3bac04d6fd46.png?time=1592495530" style="max-width: 100%;border:1px solid #FFFFFF" />
+                                </td>
+                                <tbody>
+                                     <tr>
+                                      
+                                         <td style="vertical-align: top;">
+                                                 <table cellspacing="0" cellpadding="0" border="0" role="presentation" style="font-size: 0px;">
+                                                     <tbody>
+                                                         <tr>
+                                                             <td>
+                                                                 <span style="font-size: 14px; font-family: Arial, Helvetica, sans-serif; color: rgb(64, 158, 255); font-weight: 700;">
+                                                     <!-- Matthew Murphy  -->
+                                                     {{name}}
+                                                     <!-- {{user.name | uppercase}} -->
+                                                 </span>
+                                             </td>
+                                         </tr>
+                                         <tr>
+                                             <td>
+                                                 <span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;">
+                                                     <!-- Founder  -->
+                                                     {{position}}
+                                                      <!-- {{user.position}} -->
+                                                 </span>
+                                                 <span> 
+                                                     <span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;"> | </span>
+                                                     <span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;">
+                                                      <!-- CMS Hosting LLC -->
+                                                      {{company}}
+                                                      <!-- {{user.company}} -->
+                                                  </span>
+                                                 </span>
+                                             </td>
+                                         </tr>
+                                         <tr>
+                                             <td>
+                                                 <table cellspacing="0" cellpadding="0" border="0" role="presentation" style="margin-top: 5px; font-size: 0px;"><tr><td><span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(64, 158, 255); font-weight: 600;">Website: </span>
+                                                     <a href="http://johndoe.com" style="text-decoration: none; color: inherit; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">
+                                                      <!-- cmshosting.xyz -->
+                                                      {{website}}
+                                                      <!-- {{user.website}} -->
+                                                  </a>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td>
+                                                     <span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(64, 158, 255); font-weight: 600;">Email: </span>
+                                                     <a href="mailto:mail@jonhdoe.com" style="text-decoration: none; color: inherit; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">
+                                                      <!-- mmurphy@cmshosting.xyz -->
+                                                      {{email}}
+                                                      <!-- {{user.email}} -->
+                                                  </a>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td >
+                                                     <span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(64, 158, 255); font-weight: 600;">Phone: </span>
+                                                     <span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;">
+                                                      <!-- 833-CMS -->
+                                                      {{phone}}
+                                                      <!-- {{user.phone}} -->
+                                                  </span>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                              <td>
+                                                  <span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(64, 158, 255); font-weight: 600;">Mobile: </span>
+                                                  <span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;">
+                                                      <!-- 209-898-6435 -->
+                                                      {{mobile}}
+                                                      <!-- {{user.mobile}} -->
+                                                  </span>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>
+                                                  <span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(64, 158, 255); font-weight: 600;">address: </span>
+                                                  <span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;">
+                                                      <!-- 1334 S Center , CA 95206 -->
+                                                      {{address}}
+                                                      <!-- {{user.address}} -->
+                                                  </span>
+                                              </td>
+                                          </tr>
+                                         </table>
+                                     </td>
+                                 </tr>
+                             </tbody>
+                         </table>
+                         </td>
+                         </tr>
+                         </tbody>
+                         </table>
+                         <table cellspacing="0" cellpadding="0" border="0" role="presentation" style="font-size: 0px; margin-top: 10px;">
+                             <tbody>
+                                 <tr>
+                                     <td>
+                                         <span style="font-size: 10px; color: rgb(136, 136, 136); border-top: 1px solid rgb(238, 238, 238); padding-top: 5px;">
+                                             <!-- Email signature by <a href="https://mysil.com?ref=email">mysigmail.com</a> -->
+                                         </span>
+                                     </td>
+                                 </tr>
+                             </tbody>
+                         </table>
+                         <img src="https://img.icons8.com/fluent/50/000000/facebook-new.png"/>
+                         <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/>
+                         <img src="https://img.icons8.com/fluent/48/000000/twitter.png"/>
+                         <img src="https://img.icons8.com/doodle/48/000000/linkedin--v2.png"/>
+                      </div>
+                         </div>
+  
+                        
+                      </mat-card-content>
+                      <mat-card-actions>
+                          <button color="accent" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+                              <mat-icon>favorite</mat-icon>
+                            </button>
+                            <button color="primary" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+                              <mat-icon>share</mat-icon>
+                            </button>
+                            <div class="example-button-row">
+                          
+                              <button mat-stroked-button color="primary" id="get2" name="get2" (click)= "getFunction2()">View Source Code</button>
+                              <button mat-stroked-button color="accent" [cdkCopyToClipboard]="value" id="get2" (click)="copyCode2()">Copy Code</button>
+                              
+                              
+                            </div>
+                         
+                      </mat-card-actions>
+                      </mat-card>
+
+                      <mat-card class="example-card" >
+                        
+                        <mat-card-header>
+                          <mat-card-title style="font-size: 21px; font-family: Arial, Helvetica, sans-serif; color: rgb(64, 158, 255); font-weight: 600;">Email Template</mat-card-title>
+                        
+                      </mat-card-header>
+                      
+                      <mat-card-content> 
+                          To : <br><hr>
+                          From : <hr>
+                          <div id="htmlcode3"> 
+                              <div style="max-width: 400px">
+                              <table cellspacing="0" cellpadding="0" border="0" role="presentation" style="font-size: 0px; line-height: 1.5;">
+                                 <tbody>
+                                     <tr>
+                                      <td width="35%">
+                                        <img src="https://img.mysignature.io/p/6/5/9/65978094-291c-58bb-953f-3bac04d6fd46.png?time=1592495530" style="max-width: 100%;border:1px solid #FFFFFF" />
+                                    </td>
+                                    {{name}}
+                                         <td style="vertical-align: top;">
+                                                 <table cellspacing="0" cellpadding="0" border="0" role="presentation" style="font-size: 0px;">
+                                                     <tbody>
+                                                         <tr>
+                                                             <td>
+                                                                 <span style="font-size: 14px; font-family: Arial, Helvetica, sans-serif; color: rgb(64, 158, 255); font-weight: 700;">
+                                                     <!-- Matthew Murphy  -->
+                                                     {{name}}
+                                                     <!-- {{user.name | uppercase}} -->
+                                                 </span>
+                                             </td>
+                                         </tr>
+                                         <tr>
+                                             <td>
+                                                 <span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;">
+                                                     <!-- Founder  -->
+                                                     {{position}}
+                                                      <!-- {{user.position}} -->
+                                                 </span>
+                                                 <span> 
+                                                     <span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;"> | </span>
+                                                     <span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;">
+                                                      <!-- CMS Hosting LLC -->
+                                                      {{company}}
+                                                      <!-- {{user.company}} -->
+                                                  </span>
+                                                 </span>
+                                             </td>
+                                         </tr>
+                                         <tr>
+                                             <td>
+                                                 <table cellspacing="0" cellpadding="0" border="0" role="presentation" style="margin-top: 5px; font-size: 0px;"><tr><td><span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(64, 158, 255); font-weight: 600;">Website: </span>
+                                                     <a href="http://johndoe.com" style="text-decoration: none; color: inherit; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">
+                                                      <!-- cmshosting.xyz -->
+                                                      {{website}}
+                                                      <!-- {{user.website}} -->
+                                                  </a>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td>
+                                                     <span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(64, 158, 255); font-weight: 600;">Email: </span>
+                                                     <a href="mailto:mail@jonhdoe.com" style="text-decoration: none; color: inherit; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">
+                                                      <!-- mmurphy@cmshosting.xyz -->
+                                                      {{email}}
+                                                      <!-- {{user.email}} -->
+                                                  </a>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td >
+                                                     <span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(64, 158, 255); font-weight: 600;">Phone: </span>
+                                                     <span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;">
+                                                      <!-- 833-CMS -->
+                                                      {{phone}}
+                                                      <!-- {{user.phone}} -->
+                                                  </span>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                              <td>
+                                                  <span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(64, 158, 255); font-weight: 600;">Mobile: </span>
+                                                  <span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;">
+                                                      <!-- 209-898-6435 -->
+                                                      {{mobile}}
+                                                      <!-- {{user.mobile}} -->
+                                                  </span>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>
+                                                  <span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(64, 158, 255); font-weight: 600;">address: </span>
+                                                  <span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;">
+                                                      <!-- 1334 S Center , CA 95206 -->
+                                                      {{address}}
+                                                      <!-- {{user.address}} -->
+                                                  </span>
+                                              </td>
+                                          </tr>
+                                         </table>
+                                     </td>
+                                 </tr>
+                             </tbody>
+                         </table>
+                         </td>
+                         </tr>
+                         </tbody>
+                         </table>
+                         <table cellspacing="0" cellpadding="0" border="0" role="presentation" style="font-size: 0px; margin-top: 10px;">
+                             <tbody>
+                                 <tr>
+                                     <td>
+                                         <span style="font-size: 10px; color: rgb(136, 136, 136); border-top: 1px solid rgb(238, 238, 238); padding-top: 5px;">
+                                             <!-- Email signature by <a href="https://mysil.com?ref=email">mysigmail.com</a> -->
+                                         </span>
+                                     </td>
+                                 </tr>
+                             </tbody>
+                         </table>
+                         <img src="https://img.icons8.com/fluent/50/000000/facebook-new.png"/>
+                         <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/>
+                         <img src="https://img.icons8.com/fluent/48/000000/twitter.png"/>
+                         <img src="https://img.icons8.com/doodle/48/000000/linkedin--v2.png"/>
+                      </div>
+                         </div>
+  
+                        
+                      </mat-card-content>
+                      <mat-card-actions>
+                          <button color="accent" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+                              <mat-icon>favorite</mat-icon>
+                            </button>
+                            <button color="primary" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+                              <mat-icon>share</mat-icon>
+                            </button>
+                            <div class="example-button-row">
+                          
+                              <button mat-stroked-button color="primary" id="get3" name="get" (click)= "getFunction3()">View Source Code</button>
+                              <button mat-stroked-button color="accent" [cdkCopyToClipboard]="value" id="get3" (click)="copyCode3()">Copy Code</button>
+                              
+                              
+                            </div>
+                         
+                      </mat-card-actions>
+                      </mat-card>
             </div>  
     </div>
+</div>
 </div>

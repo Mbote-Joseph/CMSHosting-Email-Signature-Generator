@@ -75,5 +75,41 @@ copyCode1(){
  		}
  
 }
+getFunction2(){
+	if (document.getElementById('get2')) { 
+		var e=document.getElementById("htmlcode2");
+      var content=e.innerHTML;
+      alert(content);
+       this.value=content
+ 		}
+ 	
+    }
+copyCode2(){
+  if (document.getElementById('get2')) { 
+		var e=document.getElementById("htmlcode2");
+      var content=e.innerHTML;
+      
+       this.value=content
+ 		}
+ 
+}
+getFunction3(){
+	if (document.getElementById('get3')) { 
+		var e=document.getElementById("htmlcode3");
+      var content=e.innerHTML;
+      alert(content);
+       this.value=content
+ 		}
+ 	
+    }
+copyCode3(){
+  if (document.getElementById('get3')) { 
+		var e=document.getElementById("htmlcode3");
+      var content=e.innerHTML;
+      
+       this.value=content
+ 		}
+ 
+}
 
 }
