@@ -18,6 +18,12 @@ export class CreateComponent implements OnInit {
   skype: any='';
   email:any='';
   address:any='';
+  imageUrl:any='https://img.mysignature.io/p/6/5/9/65978094-291c-58bb-953f-3bac04d6fd46.png?time=1592495530';
+  bannerUrl:any='';
+  facebookLink: any='';
+  instagramLink: any='';
+  twitterLink: any='';
+  linkedinLink: any='';
   value:any='';
   
   constructor() { }
@@ -36,6 +42,12 @@ export class CreateComponent implements OnInit {
       document.getElementById('skype').innerHTML = this.skype.value;
       document.getElementById('email').innerHTML = this.email.value;
       document.getElementById('address').innerHTML = this.address.value;
+      document.getElementById('imageUrl').innerHTML = this.imageUrl.value;
+      document.getElementById('bannerUrl').innerHTML = this.bannerUrl.value;
+      document.getElementById('facebookLink').innerHTML = this.facebookLink.value;
+      document.getElementById('instagramLink').innerHTML = this.instagramLink.value;
+      document.getElementById('twitterLink').innerHTML = this.twitterLink.value;
+      document.getElementById('linkedinLink').innerHTML = this.linkedinLink.value;
       }
 }
 
