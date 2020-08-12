@@ -214,6 +214,41 @@ copyCode8(){
  		}
  
 }
-
+getFunction9(){
+	if (document.getElementById('get9')) { 
+		let e=document.getElementById("htmlcode9");
+      let content=e.innerHTML;
+      alert(content);
+       this.value=content
+ 		}
+ 	
+    }
+copyCode9(){
+  if (document.getElementById('get9')) { 
+		let e=document.getElementById("htmlcode9");
+      let content=e.innerHTML;
+      
+       this.value=content
+ 		}
+ 
+}
+getFunction10(){
+	if (document.getElementById('get10')) { 
+		let e=document.getElementById("htmlcode10");
+      let content=e.innerHTML;
+      alert(content);
+       this.value=content
+ 		}
+ 	
+    }
+copyCode10(){
+  if (document.getElementById('get10')) { 
+		let e=document.getElementById("htmlcode10");
+      let content=e.innerHTML;
+      
+       this.value=content
+ 		}
+ 
+}
 
 }
