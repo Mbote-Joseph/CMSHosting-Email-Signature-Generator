@@ -123,5 +123,97 @@ copyCode3(){
  		}
  
 }
+getFunction4(){
+	if (document.getElementById('get4')) { 
+		let e=document.getElementById("htmlcode4");
+      let content=e.innerHTML;
+      alert(content);
+       this.value=content
+ 		}
+ 	
+    }
+copyCode4(){
+  if (document.getElementById('get4')) { 
+		let e=document.getElementById("htmlcode4");
+      let content=e.innerHTML;
+      
+       this.value=content
+ 		}
+ 
+}
+
+getFunction5(){
+	if (document.getElementById('get5')) { 
+		let e=document.getElementById("htmlcode5");
+      let content=e.innerHTML;
+      alert(content);
+       this.value=content
+ 		}
+ 	
+    }
+copyCode5(){
+  if (document.getElementById('get5')) { 
+		let e=document.getElementById("htmlcode5");
+      let content=e.innerHTML;
+      
+       this.value=content
+ 		}
+ 
+}
+getFunction6(){
+	if (document.getElementById('get6')) { 
+		let e=document.getElementById("htmlcode6");
+      let content=e.innerHTML;
+      alert(content);
+       this.value=content
+ 		}
+ 	
+    }
+copyCode6(){
+  if (document.getElementById('get6')) { 
+		let e=document.getElementById("htmlcode6");
+      let content=e.innerHTML;
+      
+       this.value=content
+ 		}
+ 
+}
+getFunction7(){
+	if (document.getElementById('get7')) { 
+		let e=document.getElementById("htmlcode7");
+      let content=e.innerHTML;
+      alert(content);
+       this.value=content
+ 		}
+ 	
+    }
+copyCode7(){
+  if (document.getElementById('get7')) { 
+		let e=document.getElementById("htmlcode7");
+      let content=e.innerHTML;
+      
+       this.value=content
+ 		}
+ 
+}
+getFunction8(){
+	if (document.getElementById('get8')) { 
+		let e=document.getElementById("htmlcode8");
+      let content=e.innerHTML;
+      alert(content);
+       this.value=content
+ 		}
+ 	
+    }
+copyCode8(){
+  if (document.getElementById('get8')) { 
+		let e=document.getElementById("htmlcode8");
+      let content=e.innerHTML;
+      
+       this.value=content
+ 		}
+ 
+}
+
 
 }
